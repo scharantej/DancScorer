@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dance Analysis Results</title>
+</head>
+<body>
+<h1>Dance Analysis Results</h1>
+<p>Similarity score: {{ similarity_score }}</p>
+<div id="dancer1-locations">
+<h2>Dancer 1 Locations</h2>
+<ul>
+{% for location in dancer1_locations %}
+<li>{{ location }}</li>
+{% endfor %}
+</ul>
+</div>
+<div id="dancer2-locations">
+<h2>Dancer 2 Locations</h2>
+<ul>
+{% for location in dancer2_locations %}
+<li>{{ location }}</li>
+{% endfor %}
+</ul>
+</div>
+</body>
+</html>
+
